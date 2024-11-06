@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                    color: #333;
+                }
+                
+                h1, h2 {
+                    color: white;
+                }
+                .malcolm{
+                    
+                }
+                header {
+                    background-color: #0a4f7c;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                
+                /* Navigation Styles */
+                nav {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+                
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                }
+                
+                nav ul li {
+                    margin: 0 15px;
+                }
+                
+                nav a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                
+                nav a:hover {
+                    text-decoration: underline;
+                    color: #ecf0f1;
+                }
+                
+                /* Main Content Styles */
+                main {
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: white;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    gap: 20px;
+                }
+                
+                .card {
+                    background-color: #ecf0f1;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+                    
+                    
+                }
+                .head{
+                    background-color: #0a4f7c;
+                    color:white;
+                    display: block;
+                    text-align: center;
+                    padding:0.75rem 0;
+                    margin: 0;
+                    
+                }
+                
+                
+                /* Footer Styles */
+                footer {
+                    text-align: center;
+                    padding: 20px;
+                    background-color: #0a4f7c;
+                    color: white;
+                }
+                
+                footer p {
+                    margin: 5px 0;
+                }
+                
+
+
+
+
+
+
+
+                @media (max-width: 768px) {
+                    nav ul {
+                        flex-direction: column; /* Stack nav items vertically */
+                        align-items: center; /* Center nav items */
+                    }
+                
+                    main {
+                        grid-template-columns: 1fr; /* Stack main content */
+                    }
+                
+                    .card {
+                        margin-bottom: 30px; /* Add spacing between stacked cards */
+                    }
+                }
+                
+                
