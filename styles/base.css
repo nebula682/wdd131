@@ -10,11 +10,9 @@ body {
                 h1, h2 {
                     color: white;
                 }
-                .malcolm{
-                    
-                }
+                
                 header {
-                    background-color: #0a4f7c;
+                    background-color:#0d3e5e;
                     color: white;
                     padding: 20px;
                     text-align: center;
@@ -23,9 +21,17 @@ body {
                 /* Navigation Styles */
                 nav {
                     display: flex;
-                    justify-content: center;
-                    margin-top: 10px;
+                    justify-content: center ;
+                    margin: 0;
+                    width: 100%;
+                    padding:12px;
+                    
+                    
+                }.malcolm{
+                    background-color: #333;
+
                 }
+                
                 
                 nav ul {
                     list-style-type: none;
@@ -35,13 +41,17 @@ body {
                 }
                 
                 nav ul li {
+                    
                     margin: 0 15px;
+                    
+                    
                 }
                 
                 nav a {
                     color: white;
                     text-decoration: none;
                     font-weight: 600;
+                    display: block;
                 }
                 
                 nav a:hover {
@@ -63,19 +73,23 @@ body {
                 
                 .card {
                     background-color: #ecf0f1;
-                    padding: 15px;
+                    padding: 0;
                     border-radius: 8px;
+                    overflow: hidden;
                     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+                    margin: 0;
                     
                     
                 }
                 .head{
-                    background-color: #0a4f7c;
+                    background-color: #0d3e5e;
                     color:white;
                     display: block;
                     text-align: center;
                     padding:0.75rem 0;
                     margin: 0;
+                    border-radius: 7px;
+                    overflow: hidden;
                     
                 }
                 
@@ -84,7 +98,7 @@ body {
                 footer {
                     text-align: center;
                     padding: 20px;
-                    background-color: #0a4f7c;
+                    background-color: #0d3e5e;
                     color: white;
                 }
                 
