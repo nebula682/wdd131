@@ -1,0 +1,17 @@
+/* Larger Screen Layout - Override styles for bigger screens */
+@media (min-width: 768px) {
+                    /* Change navigation layout to horizontal on larger screens */
+                    nav ul {
+                        flex-direction: row; /* Horizontal layout */
+                        justify-content: center;
+                    }
+                
+                    nav ul li {
+                        margin: 0 15px;
+                    }
+                
+                    /* Temples gallery - grid with 3 columns on larger screens */
+                    .temples-gallery {
+                        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+                    }
+                }
