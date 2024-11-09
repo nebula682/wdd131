@@ -2,7 +2,7 @@
 
 /* Basic body styles */
 body {
-                    font-family: 'Arial', sans-serif;
+                    font-family: 'Times New Roman', Times, serif;
                     margin: 0;
                     padding: 0;
                     background-color: #f4f4f4;
@@ -10,7 +10,7 @@ body {
                 
                 /* Header Styles */
                 header {
-                    background-color: #240b4f;
+                    background-color: #2e0e67;
                     color: white;
                     text-align: center;
                     padding: 1rem;
@@ -74,7 +74,7 @@ body {
                 
                 /* Footer Styles */
                 footer {
-                    background-color: #240b4f;
+                    background-color: #2e0e67;
                     color: white;
                     text-align: center;
                     padding: 1rem;
