@@ -1,0 +1,64 @@
+* Global Variables */
+:root {
+    --primary-color: #FF4500; /* Color similar to Madagascar flag */
+    --secondary-color: #006747; /* Another color from the flag */
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Image Section */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero picture {
+    display: block;
+}
+
+/* Weather Section */
+.weather {
+    background-color: var(--secondary-color);
+    color: red;
+    padding: 20px;
+}
+
+.weather h2 {
+    margin: 0;
+}
+
+.weather-info {
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: red;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .weather h2::after {
+        content: ' ⛅'; /* Emoticon for weather in wider view */
+    }
+}

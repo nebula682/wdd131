@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/safe.css">
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Beautiful Place</h1>
+    </header>
+
+    <!-- Hero Section with Responsive Image -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <source srcset="images/hero-small.webp" media="(max-width: 767px)">
+            <img src="images/byo.jpg" alt="Scenic view of the place">
+        </picture>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <div class="weather-info">
+            <span id="temperature">Temperature: 5°C</span>
+            <span id="wind-speed">Wind Speed: 8 km/h</span>
+            <span id="windchill">Windchill: N/A</span>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span>. Last modified: <span id="modified-date"></span>.</p>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+
+</body>
