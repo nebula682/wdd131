@@ -8,6 +8,7 @@
                 
                     nav ul li {
                         margin: 0 15px;
+                        flex: 1 1 100%;
                     }
                 
                     /* Temples gallery - grid with 3 columns on larger screens */

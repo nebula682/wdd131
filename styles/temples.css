@@ -2,7 +2,7 @@
 
 /* Basic body styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
                     margin: 0;
                     padding: 0;
                     background-color: #f4f4f4;
@@ -45,6 +45,25 @@ body {
                 nav a:hover {
                     background-color: #575757;
                     border-radius: 4px;
+                }
+                #menu{
+                    display: block;
+                    font-size: 2 rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    background-color: aqua;
+                    padding: .5rem,0.75rem;
+                    color: red;
+
+                }
+                #menu::before{
+                    content: " &#9776;"
+                }
+                .show li{
+                    display: block;
+                }
+                #menu.show::before{
+                    content: icon;
                 }
                 
                 /* Main content layout */
