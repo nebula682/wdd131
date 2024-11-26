@@ -1,12 +1,13 @@
 :root {
-  --primary-color: #007a5a;
+  --primary-color: #12652a;
   --secondary-color: #ff6347;
   --text-color: #333;
   --background-color: #f5f5f5;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -20,34 +21,82 @@ header {
   padding: 1rem;
 }
 
+#hero {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.city-info {
+  position: absolute; /* Use absolute positioning */
+  top: 20px; /* Position from the top */
+  left: 20px; /* Position from the left */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better readability */
+  max-width: 300px; /* Optional: Set a max width */
+}
+
+h1 {
+  color: white;
+  font-weight: 900;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.data-label {
+  font-weight: bold;
+}
+
 main {
-  padding: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 #hero img {
   width: 100%;
   height: auto;
   margin: 0;
-  padding:0;
+  padding: 0;
+  object-fit: cover;
 }
 
-
-#weather h2 {
-  font-size: 1.5rem;
-  margin-top: 0;
+#weather {
+  position: absolute; /* Use absolute positioning */
+  bottom: 20px; /* Position from the bottom */
+  right: 10px; /* Position from the right */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better readability */
+  max-width: 300px; /* Optional: Set a max width */
+  ;
 }
 
 #weather #weather-icon {
-  width: 50px;
-  height: 50px;
-  background-image: url('images/weather-icon.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 50px; /* Set width for the icon */
+  height: 50px; /* Set height for the icon */
+  background-image: url('images/weather-icon.svg'); /* Ensure this path is correct */
+  background-size: contain; /* Ensure the image fits within the div */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  margin-bottom: 10px; /* Optional: Add some space below the icon */
 }
 
-#weather #windchill {
-  font-weight: bold;
+/*#weather {
+  
+  color: #333;
+  padding: 20px;
+  margin: 20px;
+
 }
+
+#weather-icon::after {
+  content: "☀️"; 
+}*/
 
 footer {
   text-align: center;
@@ -56,27 +105,30 @@ footer {
   color: white;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   #hero img {
-      max-height: 300px;
+    max-height: 300px; /* Limit image height on smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .city-info, #weather {
+    position: relative; /* Remove absolute positioning */
+    max-width: 90%; /* Set max width for better fit on small screens */
+    margin: 10px 10px; /* Add margin for spacing */
   }
 }
-
-@media (min-width: 769px) {
-  #weather::after {
-      content: '⛅'; /* For larger views, display the weather emoji */
-      font-size: 1.5rem;
-  }
-}
-
-
 
 @media (max-width: 600px) {
   header h1 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   #weather {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place - [Name of Place]</title>
+    <title>Place - Bulawayo</title>
     <meta name="description" content="Dynamic Web Fundamentals - Malcolm Nigel Nkomo">
     <meta name="author" content="Malcolm Nigel Nkomo">
     
@@ -21,30 +21,45 @@
 <body>
 
 <header>
-    <h1>Welcome to Bulawayo</h1>
+    <h1>Welcome To Bulawayo</h1>
 </header>
 
 <main>
     <section id="hero">
         <picture>
-            <source srcset="images/byo small.webp" media="min-width: 500px">
-            <source srcset="images/byo medium.webp" media="min-width: 1000px">
-            <img src="images/ghana.jpg" alt="Orem Utah Temple" width="1500" height="750">
-          </picture>
-    </section>
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="Description of the image" width="1500" height="750">
+        </picture>
 
-    <section id="weather">
+        <div class="container">
+
+    <div class="city-info">
+        <h2>Data</h2>
+        <p><span class="data-label">Country:</span> Zimbabwe</p>
+        <p><span class="data-label">Population:</span> 2,161,000</p>
+        <p><span class="data-label">Languages:</span> Ndebele and Shona</p>
+        <p><span class="data-label">Area:</span> 105.4 km²</p>
+        <p><span class="data-label">Currency:</span> ZWG</p>
+    </div>
+
+    <div id="weather">
         <h2>Weather</h2>
         <div id="weather-icon"></div>
         <p id="temperature">Temperature: 15°C</p>
         <p id="wind-speed">Wind Speed: 10 km/h</p>
         <p id="windchill">Windchill: <span id="windchill-value">N/A</span></p>
+    </div>
+    </div>
     </section>
 
     <!-- Additional Sections (attractions, history, etc.) -->
 </main>
 
 <footer>
+    <p>
+        <span id="currentyear"></span> Malcolm Nigel Nkomo, Zimbabwe
+        </p>
     <p>&copy; <span id="current-year"></span> | Last Modified: <span id="last-modified"></span></p>
 </footer>
 

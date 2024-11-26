@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded"), function() {
                     const temperature = 5; // Example temperature in °C
                     const windSpeed = 10; // Example wind speed in km/h
                 
@@ -19,12 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     // Set current year and last modified date
                     const currentYear = new Date().getFullYear();
                     document.getElementById("current-year").textContent = currentYear;
-                    document.getElementById("last-mod
+                    document.getElementById("last-modified")
+                }
                 
                 
                 
-                Share
-                New
-                Continue
-                GPT-4o
-                Cl
+                
