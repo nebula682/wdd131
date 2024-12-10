@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Review Submission Successful</h1>
+    </header>
+    <main>
+        <p>Thank you for your review! Your feedback is valuable to us.</p>
+        <p>You are the <span id="reviewCount">0</span> person to submit a review.</p>
+        <a href="form.html">Submit another review</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Reviews. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Display the review count from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const count = urlParams.get('count');
+        document.getElementById('reviewCount').textContent = count;
+    </script>
+</body>
+</html>

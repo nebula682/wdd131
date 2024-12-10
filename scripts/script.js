@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                     document.getElementById('current-year').textContent = currentYear;
                     document.getElementById('last-modified').textContent = lastModified;
+
+
+                
                 
                     // Static weather data
                     const temperature = 15; // Celsius
