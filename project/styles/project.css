@@ -1,176 +1,81 @@
-
-              /* Global Styles */
 body {
-                    font-family: 'Arial', sans-serif;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1.6;
-                    color: #333;
-                }
-                
-                .container {
-                    max-width: 1100px;
-                    margin: 0 auto;
-                    padding: 0 20px;
-                }
-                
-                /* Header and Navigation */
-                header {
-                    background: #bb0e0e;
-                    color: #fff;
-                    padding: 10px 0;
-                }
-                
-                header .logo {
-                    height: 50px;
-                    display: inline-block;
-                    vertical-align: middle;
-                }
-                
-                nav {
-                    display: inline-block;
-                    vertical-align: middle;
-                    float: right;
-                }
-                
-                .nav-links {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    gap: 15px;
-                }
-                
-                .nav-links a {
-                    text-decoration: none;
-                    color: #fff;
-                    padding: 8px 12px;
-                    border-radius: 5px;
-                    transition: background 0.3s ease;
-                }
-                
-                .nav-links a:hover {
-                    background: #444;
-                }
-                
-                /* Hero Section */
-                .hero {
-                    position: relative;
-                    text-align: center;
-                    color: #fff;
-                    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
-                    height: 400px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .hero h1 {
-                    font-size: 2.5rem;
-                    margin: 0.5rem 0;
-                }
-                
-                .hero p {
-                    font-size: 1.2rem;
-                    margin: 0.5rem 0;
-                }
-                
-                .hero .btn {
-                    background: #007BFF;
-                    color: white;
-                    border: none;
-                    padding: 10px 20px;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    transition: background 0.3s ease;
-                }
-                
-                .hero .btn:hover {
-                    background: #0056b3;
-                }
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-                .hero {
-                    position: relative;
-                    text-align: center;
-                    color: white;
-                    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
-                    height: 100vh; /* Full viewport height */
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .hero img {
-                    width: 100%; /* Ensure the image spans the full width */
-                    height: auto; /* Maintain the aspect ratio */
-                    object-fit: cover; /* Ensures the image covers the area without distortion */
-                    object-position: center; /* Center the image */
-                }
+header {
+    background: #27ae60;
+    color: #fff;
+    padding: 1rem 0;
+}
 
-                
-                /* About Section */
-                .about {
-                    text-align: center;
-                    padding: 50px 20px;
-                    background: #f4f4f4;
-                }
-                
-                .about h2 {
-                    font-size: 2rem;
-                    margin-bottom: 20px;
-                }
-                
-                /* Contact Form */
-                .contact {
-                    padding: 50px 20px;
-                    background: #fff;
-                    max-width: 600px;
-                    margin: 0 auto;
-                }
-                
-                .contact h2 {
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
-                
-                .contact form {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                }
-                
-                .contact label {
-                    font-weight: bold;
-                }
-                
-                .contact input, .contact textarea, .contact button {
-                    padding: 10px;
-                    font-size: 1rem;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                }
-                
-                .contact button {
-                    background: #007BFF;
-                    color: white;
-                    cursor: pointer;
-                    transition: background 0.3s ease;
-                }
-                
-                .contact button:hover {
-                    background: #0056b3;
-                }
-                
-                /* Footer */
-                footer {
-                    text-align: center;
-                    padding: 10px;
-                    background:#bb0e0e;
-                    color: #fff;
-                }
-                
-                footer a {
-                    color: #fff;
-                    text-decoration: underline;}  
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #145a32;
+}
+
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.recipes {
+    padding: 2rem;
+}
+
+.contact {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+footer {
+    background: #27ae60;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
