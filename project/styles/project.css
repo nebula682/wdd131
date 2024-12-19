@@ -30,7 +30,7 @@ body {
 
 /* Header */
 header {
-    background-color: #3b69c5;
+    background-color: #199d3f;
     color: white;
     padding: 20px 0;
 }
@@ -73,7 +73,7 @@ section h2 {
 /* Button Styling */
 .btn {
     padding: 10px 20px;
-    background-color:#13c256;
+    background-color:#199d3f;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -89,7 +89,7 @@ section h2 {
 
  /* Footer Styles */
  footer {
-    background-color: #3b69c5;
+    background-color: #199d3f;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -101,6 +101,9 @@ section h2 {
 footer p {
     margin: 5px 0;
     padding: 1px;
+}
+footer a {
+    color: #fafafa;
 }
 
 /* Responsiveness */
@@ -136,7 +139,7 @@ form {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(244, 241, 241, 0.1);
 }
 
 .form-group {
