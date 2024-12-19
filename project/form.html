@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Healthy Living</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Fill out the form below, and we’ll get back to you as soon as possible.</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div id="formResponse" class="response-message"></div>
+        </section>
+    </main>
+
+    <footer>
+                    &copy; <span id="currentyear"></span> Malcolm Nigel Nkomo, Zimbabwe
+</p>
+
+<p>Attributions &copy; 2024 - <a href="attributions.html">Resource Attributions</a></p>
+<p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

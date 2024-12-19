@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Routines</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="logo">
+            <h1>Healthy Living</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="exercise-guide">
+            <h2>Exercise Routines for All Levels</h2>
+            <p>Choose a workout routine that fits your fitness level and goals.</p>
+
+            <div class="workout-card">
+                <h3>Beginner Routine</h3>
+                <p>Start with basic exercises and build your strength and endurance.</p>
+                <button class="showRoutineBtn" data-routine="beginner">Show Routine</button>
+                <ul class="routine-list" id="beginner-routine">
+                    <li>Push-ups</li>
+                    <li>Squats</li>
+                    <li>Planks</li>
+                </ul>
+            </div>
+
+            <div class="workout-card">
+                <h3>Intermediate Routine</h3>
+                <p>For those looking to challenge themselves with more advanced exercises.</p>
+                <button class="showRoutineBtn" data-routine="intermediate">Show Routine</button>
+                <ul class="routine-list" id="intermediate-routine">
+                    <li>Jumping Jacks</li>
+                    <li>Lunges</li>
+                    <li>Burpees</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        &copy; <span id="currentyear"></span> Malcolm Nigel Nkomo, Zimbabwe
+    </p>
+    
+    <p>Attributions &copy; 2024 - <a href="attributions.html">Resource Attributions</a></p>
+    <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

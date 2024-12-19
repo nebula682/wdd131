@@ -1,29 +1,70 @@
-// Dynamic Recipes Loading
-const recipes = [
-    { name: "Avocado Toast", category: "Breakfast" },
-    { name: "Quinoa Salad", category: "Lunch" },
-    { name: "Grilled Salmon", category: "Dinner" },
-];
+// Dynamic greeting function
+const greetUser = () => {
+    const hours = new Date().getHours();
+    let greeting = '';
 
-const recipesContainer = document.getElementById('recipes-container');
-const searchBar = document.getElementById('search-bar');
+    if (hours < 12) {
+        greeting = 'Good Morning';
+    } else if (hours < 18) {
+        greeting = 'Good Afternoon';
+    } else {
+        greeting = 'Good Evening';
+    }
 
-function displayRecipes(filter = "") {
-    recipesContainer.innerHTML = recipes
-        .filter(recipe => recipe.name.toLowerCase().includes(filter.toLowerCase()))
-        .map(recipe => `<div class="recipe-item">${recipe.name} - ${recipe.category}</div>`)
-        .join('');
-}
+    document.getElementById('greetingMessage').innerText = `${greeting}! Ready to live a healthier life?`;
+};
 
-searchBar.addEventListener('input', () => displayRecipes(searchBar.value));
-displayRecipes();
+// Show and hide workout routines on button click
+const showRoutine = () => {
+    const buttons = document.querySelectorAll('.showRoutineBtn');
 
-// Form Submission
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    localStorage.setItem('contactForm', JSON.stringify({ name, email, message }));
-    alert('Thank you for reaching out!');
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const routineId = `${e.target.dataset.routine}-routine`;
+            const routineList = document.getElementById(routineId);
+
+            if (routineList.style.display === 'none' || routineList.style.display === '') {
+                routineList.style.display = 'block';
+            } else {
+                routineList.style.display = 'none';
+            }
+        });
+    });
+};
+
+// Initialize features
+greetUser();
+showRoutine();
+
+
+
+// Contact Form Submission Handler
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    let responseMessage = '';
+
+    // Validate form fields
+    if (!name || !email || !message) {
+        responseMessage = 'Please fill out all fields.';
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+        responseMessage = 'Please enter a valid email address.';
+    } else {
+        responseMessage = 'Thank you for contacting us! We will respond shortly.';
+        // Clear the form
+        document.getElementById('contactForm').reset();
+    }
+
+    // Display the response message
+    document.getElementById('formResponse').innerText = responseMessage;
 });
+
+ //Populate the current year
+ document.getElementById('currentyear').textContent = new Date().getFullYear();
+                
+ //Populate last modified date
+document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;

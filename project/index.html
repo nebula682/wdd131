@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Bites</title>
+    <title>Healthy Lifestyle & Fitness</title>
     <link rel="stylesheet" href="styles/project.css">
 </head>
 <body>
+    <div class="wrapper">
     <header>
-        <div class="container">
-            <h1>Healthy Bites</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <h1>Healthy Living</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="hero">
-        <h2>Welcome to Healthy Bites</h2>
-        <p>Your gateway to healthier, tastier meals.</p>
-        <button class="btn">Explore Recipes</button>
-    </section>
+
+    <main>
+        <section id="hero">
+            <img src="images/healthy.webp" alt=" Healthy lifestyle" loading="lazy">
+            <h2>Welcome to Your Healthy Lifestyle Journey</h2>
+            <p>Discover how exercise, balanced nutrition, and wellness habits can improve your life.</p>
+        </section>
+
+        <section id="featured">
+            <div class="feature">
+                <h3>Exercise Routines</h3>
+                <p>Find tailored workout routines for every fitness level.</p>
+                <a href="exercise.html" class="btn">Explore</a>
+            </div>
+            <div class="feature">
+                <h3>Nutrition Tips</h3>
+                <p>Learn the basics of healthy eating and get personalized meal ideas.</p>
+                <a href="nutrition.html" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section id="greeting">
+            <h3 id="greetingMessage"></h3>
+        </section>
+    </main>
+    </div>
+
     <footer>
-        <p>© 2024 Healthy Bites | <a href="attributions.html">Attributions</a></p>
+       
+            &copy; <span id="currentyear"></span> Malcolm Nigel Nkomo, Zimbabwe
+        </p>
+        
+        <p>Attributions &copy; 2024 - <a href="attributions.html">Resource Attributions</a></p>
+        <p id="lastModified"></p>
     </footer>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
